@@ -3,6 +3,7 @@ import { Layout } from "./components/Layout";
 //import styled from "styled-components";
 
 import { Box, Button, Center, ChakraProvider, defaultSystem, Input } from "@chakra-ui/react";
+import { login } from "./services/login";
 
 // const Box = styled.div`
 //   background-color: orange;
@@ -26,7 +27,7 @@ function App() {
           <Input placeholder="senha" />
 
           <Center>
-            <Button colorScheme='teal' size='sm' width='100%' marginTop='5px'>
+            <Button onClick={login} colorScheme='teal' size='sm' width='100%' marginTop='5px'>
               Entrar
             </Button>
           </Center>
